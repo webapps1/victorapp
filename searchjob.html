@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="jmob.css">
+<script src="jquery-1.11.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="pagetwo" style= "background: #003939";>
+    <div data-role="header" data-position="fixed">
+   
+    <h1>Search Job</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+       </div>
+
+<div role="main" class="ui-content" >
+          
+        	  <form method="post" action="demoform.asp" style="width:500px;">
+  			    <fieldset>
+  
+				<select>
+					<option>Location.....</option>
+				</select>
+
+				<select>
+				<option>Industry.....</option>
+				</select>
+				<select>
+				<option>Function.....</option>
+				</select>
+
+    			<label for="exp">Experience in Years:</label><input name="exp" id="exp" min="0" max="100" value="0" type="range">
+
+				<form>
+    				<div data-role="rangeslider">
+        				<label id="min">Salary min/max</label>
+        				<input name="min" id="min" min="0" max="100" value="40" type="range">
+
+        				<label id="max">Salary min/max</label>
+
+        				<input name="max" id="max" min="0" max="100" value="80" type="range">
+    				</div>
+				</form>
+
+				<form> 
+     					<label for="search-1">Search:</label>
+     					<input name="search-1" id="search-1" value="" type="search">
+				</form>
+
+
+        	</fieldset>
+        	</form>	  
+			
+        	<p></p>    
+
+    
+    </div>
+
+  	    <div data-role="panel" id="left-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-icon="back"><a href="#My Job Search" data-rel="back">My Job Search</a></li>
+            <li data-role="list-divider">Categories</li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Jobs</h3>
+              <ul data-role="listview">
+                <li><a href="searchjob.html" data-transition="fade">Search Job</a></li>
+                <li><a href="recent.html">Recent Searches</a></li>
+             <!-- /    <li><a href="#">Walkin Jobs</a></li>
+                <li><a href="#">Recommended Jobs</a></li>
+                <li><a href="#">My Saved Jobs</a></li>
+				<li><a href="#">My Applications</a></li> -->
+              </ul>
+            
+             
+            </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Companies</h3>
+              <ul data-role="listview">
+                <li><a href="#">Companies Updates</a></li>
+                <li><a href="#">Recuriter Updates</a></li>
+            <!-- /    <li><a href="#">Companies you are following</a></li>
+				<li><a href="#">Recruiters you are following</a></li>
+				<li><a href="#">Companies you may like to follow</a></li>
+                <li><a href="#">Recruiters you may like to follow</a></li> -->
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role= "collapsible" data-inset="true" data-collapsed-icon="info" data-iconpos="right">
+	        <h3>Help</h3>
+    		</li>
+    		<li data-role= "collapsible" data-inset="true" data-collapsed-icon="gear" data-iconpos="right">
+	        <h3>Settings</h3>
+    		</li>
+    		<li data-role= "collapsible" data-inset="true" data-collapsed-icon="power" data-iconpos="right">
+	        <h3>Login</h3>
+    		</li>
+
+        </ul>
+    </div><!-- /panel -->
+</div>
+	
+    
+
+</body>
+</html>

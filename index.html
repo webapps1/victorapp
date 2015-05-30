@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="jmob.css">
+<script src="jquery-1.11.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+
+<style>
+tr {
+    border-bottom: 1px solid black;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<div  data-role="page" id="pageone">
+    <div data-role="header">
+   
+    <h1><div class ="headercolor">Welcome to My Job Search</div></h1>
+
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+           
+            <h4>Set up your profile and upload a resume so employers can find you</h4>
+   			<div data-role="controlgroup" data-type="horizontal">
+    		
+    				<table>
+                    <tbody>
+    				<tr>
+						<td><input name="textinput-4" id="name1" placeholder="First Name" value="" type="text">
+	    			</tr>
+
+                    <tr>
+
+                        <td><input name="textinput-4" id="name2" placeholder="Last Name" value="" type="text">
+
+                    </tr>
+        			<tr>
+						<td><input name="textinput-4" data-clear-btn="true" id="mail1" placeholder="Email-Id" value="" type="email"></td>
+                    </tr>
+
+                    <tr>
+						<td><input name="textinput-4" data-clear-btn="true" id="pass" placeholder="Password" autocomplete="off" value="" type="password"></td>
+				    </tr>
+
+        			<tr>
+						<td><input name="textinput-4" id="job1" placeholder="Desired Job Title" value="" type="text">
+				        </td>
+                    </tr>
+
+	               <tr>
+
+    					<td><input data-clear-btn="true" name="file-2" id="upload" value="" type="file">
+					</tr>
+
+                    <tr>
+						<td>
+							<select name="" id="jobcat">
+							<option>Select a Job category.....</option>
+							<option>Administration</option>
+							</select></td>
+					</tr>
+                    <tr>
+                        <td>
+                        
+                        <input data-role="controlgroup"  value="Submit" type="submit">
+                        <input data-role="controlgroup" value="Reset" type="reset">
+                        <input data-role="controlgroup"  value="Skip Registration" type = "button">   
+                        </td>
+                    </tr>
+</tbody>
+    			</table> 
+
+        	</div><br>
+  			<p></p>
+    </div><!-- /content -->
+    	
+    <div data-role="panel" id="left-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-icon="back"><a href="#My Job Search" data-rel="back">My Job Search</a></li>
+            <li data-role="list-divider">Categories</li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Jobs</h3>
+              <ul data-role="listview">
+                <li><a href="searchjob.html" data-transition="fade">Search Job</a></li>
+                <li><a href="recent.html" data-transition="fade">Recent Searches</a></li>
+        <!-- /        <li><a href="#">Walkin Jobs</a></li>
+                <li><a href="#">Recommended Jobs</a></li>
+                <li><a href="#">My Saved Jobs</a></li>
+				<li><a href="#">My Applications</a></li> -->
+              </ul>
+            
+             
+            </li>
+            <li data-role="collapsible" data-inset="false" data-iconpos="right">
+              <h3>Companies</h3>
+              <ul data-role="listview">
+                <li><a href="#">Companies Updates</a></li>
+                <li><a href="#">Recuriter Updates</a></li>
+            <!-- /    <li><a href="#">Companies you are following</a></li>
+				<li><a href="#">Recruiters you are following</a></li>
+				<li><a href="#">Companies you may like to follow</a></li>
+                <li><a href="#">Recruiters you may like to follow</a></li> -->
+              </ul>
+            </li><!-- /collapsible -->
+            <li data-role= "collapsible" data-inset="true" data-collapsed-icon="info" data-iconpos="right">
+	        <h3>Help</h3>
+    		</li>
+    		<li data-role= "collapsible" data-inset="true" data-collapsed-icon="gear" data-iconpos="right">
+	        <h3>Settings</h3>
+    		</li>
+    		<li data-role= "collapsible" data-inset="true" data-collapsed-icon="power" data-iconpos="right">
+	        <h3>Login</h3>
+    		</li>
+
+        </ul>
+    </div><!-- /panel -->
+
+    <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
+        <ul data-role="listview" data-icon="false">
+            <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+            <li data-role="list-divider">Share this page</li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Google +</a></li>
+            <li><a href="#">Mail</a></li>
+        </ul>
+    </div><!-- /panel -->
+
+</div>
+</body>
+</html>
